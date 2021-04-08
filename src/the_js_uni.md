@@ -54,6 +54,10 @@ Symbols // 用作隐藏实现细节（不常用）
 BigInts // 用作数学上的大整型（不常用）
 ```
 
+> 注：
+> - `typeof null`会返回`object`，而不会返回`null`，这其实是一个js的bug，但现在修复已经太迟了。关于这相关的历史，可以[看这里](https://2ality.com/2013/10/typeof-null.html).
+> - `typeof typeof value`总是会放回`string`.
+
 ### Objects and Functions 对象和防范
 
 ```javascript
